@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        *{margin:0;padding:0;}
+        #leftMenu{ background-color:#fff; width:600px; height:40px; margin:0 auto;}
+        #leftMenu ul{width:100px;position:absolute;background:#DADADA;list-style:none;}
+        #leftMenu li{width:100px;height:40px;position: relative;}
+        #leftMenu li>ul{left: 100px;top: 0;display: none;}
+        #leftMenu li:hover>ul{display: block;}
+        a{ text-decoration:none; color:#000; display:block; width:90px;}
+        a:hover{ color:#FFF; background-color: rgba(119, 0, 255, 0.322);}
+        ul li{ text-align:center;}
+    </style>
+</head>
+<body>
+    <div id="leftMenu">
+        <ul>
+            <li><a href="#">一级目录1</a>
+                <ul>
+                    <li><a href="#">100001</a></li>
+                    <li><a href="#">100002</a>
+                        <ul>
+                            <li><a href="#">100021</a></li>
+                            <li><a href="#">100022</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">一级目录2</a></li>
+            <li><a href="#">一级目录3</a>
+                <ul>
+                    <li><a href="#">300001</a></li>
+                    <li><a href="#">300002</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
